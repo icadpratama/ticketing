@@ -19,7 +19,6 @@ import CircularProgress from "components/CircularProgress/index";
 const FormItem = Form.Item;
 
 class SignIn extends React.Component {
-
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {
