@@ -139,7 +139,6 @@ function* signInUserWithTwitter() {
 
 function* signInUserWithEmailPassword({ payload }) {
   const { email, password } = payload;
-  console.log(payload);
   try {
     const signInUser = yield call(signInUserWithEmailPasswordRequest, email, password);
     if (signInUser.message) {
@@ -158,7 +157,7 @@ function* signOut() {
   try {
     const signOutUser = yield call(signOutRequest);
     if (signOutUser === undefined) {
-      window.localStorage.clear();
+      localStorage.clear();
       yield put(userSignOutSuccess(signOutUser));
     } else {
       yield put(showAuthMessage(signOutUser.message));
