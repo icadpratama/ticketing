@@ -232,7 +232,7 @@ class Agent extends Component {
     constructor() {
         super();
         this.state = {
-            noContentFoundMessage: 'No Contact found in selected folder',
+            noContentFoundMessage: 'No Agent found in selected folder',
             alertMessage: '',
             showMessage: false,
             selectedSectionId: 1,

@@ -19,7 +19,7 @@ const INIT_STATE = {
   showMessage: false,
   initURL: '',
   authUser: localStorage.getItem('user_id'),
-  userEmail: localStorage.getItem('user_email')
+  userEmail: sessionStorage.getItem('user_email')
 };
 
 

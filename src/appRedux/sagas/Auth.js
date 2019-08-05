@@ -144,7 +144,7 @@ function* signInUserWithEmailPassword({ payload }) {
     if (signInUser.message) {
       yield put(showAuthMessage(signInUser.message));
     } else {
-      localStorage.setItem('user_email', payload.email);
+      sessionStorage.setItem('user_email', payload.email);
       localStorage.setItem('user_id', signInUser.user.uid);
       yield put(userSignInSuccess(signInUser.user.uid));
     }
@@ -157,6 +157,7 @@ function* signOut() {
   try {
     const signOutUser = yield call(signOutRequest);
     if (signOutUser === undefined) {
+      sessionStorage.clear();
       localStorage.clear();
       yield put(userSignOutSuccess(signOutUser));
     } else {
