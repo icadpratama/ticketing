@@ -15,6 +15,7 @@
     "less-loader": "^4.1.0",
     "less-vars-to-js": "^1.2.1",
     "moment": "^2.22.2",
+    "nodemon": "1.19.1",
     "nprogress": "^0.2.0",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
@@ -55,13 +56,15 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "test": "react-app-rewired --env=jsdom"
+    "test": "react-app-rewired --env=jsdom",
+    "start:server": "nodemon server/index.js"
   },
   "devDependencies": {
     "add": "^2.0.6",
     "babel-plugin-import": "^1.8.0",
     "customize-cra": "^0.2.10",
     "react-app-rewired": "^2.0.2",
+    "webpack-cli": "^3.3.7",
     "yarn": "^1.7.0"
   },
   "browserslist": [
