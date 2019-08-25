@@ -1,4 +1,4 @@
-FROM node:carbon
+FROM node:jessie
 
 RUN apt-get update
 RUN apt-get upgrade -y
@@ -14,6 +14,7 @@ RUN node -v
 
 # Install app dependencies
 COPY package.json /usr/src/app/
+COPY package-lock.json /usr/src/app/
 
 RUN npm install
 
