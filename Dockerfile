@@ -29,6 +29,8 @@ ENV PORT 3000
 ENV PUBLIC_PATH "/"
 
 RUN npm run build
+# RUN npm install -g serve
 
 # Main command
 CMD [ "npm", "run", "start:server" ]
+# CMD [ "serve", "-s", "build" ]
