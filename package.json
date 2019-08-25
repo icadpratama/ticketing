@@ -1,5 +1,5 @@
 {
-  "name": "Ticketing",
+  "name": "ticketing",
   "version": "1.5.0",
   "private": true,
   "dependencies": {
