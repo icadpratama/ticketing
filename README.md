@@ -1,6 +1,5 @@
 # [Ticketing - Lawencon Ticketing Support System Admin Template based on Ant Framework](https://www.lawencon.com/ "Lawencon")
-Ticketing is a react redux based admin template for ticketing support system.
-
+Ticketing is a react redux based admin template for ticketing support system
 # Local Installation
 
 **Note: Ticketing is using [yarn](https://yarnpkg.com/en/docs/install) instead npm**
@@ -70,13 +69,12 @@ To run docker registry using docker image on docker hub run:
 
 #### Ubuntu ####
 To push a new image to registry use next commands:
-```
-docker pull ubuntu
-docker tag ubuntu localhost:5000/ubuntu
-docker push localhost:5000/ubuntu
-```
+``` docker pull ubuntu ```
+``` docker tag ubuntu localhost:5000/ubuntu ```
+``` docker push localhost:5000/ubuntu ```
 
-#### Create Jenkinsfile, Dockerfile, and Dockerfile.test
+#### Create Jenkinsfile, Dockerfile, and Dockerfile.test ####
+
 Jenkinsfile
 ```
 node {
