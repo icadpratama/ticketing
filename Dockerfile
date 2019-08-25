@@ -15,7 +15,7 @@ RUN yarn -v
 
 # Install app dependencies
 COPY package.json /usr/src/app/
-COPY yarn-lock.json /usr/src/app/
+# COPY yarn-lock.json /usr/src/app/
 
 RUN yarn
 
