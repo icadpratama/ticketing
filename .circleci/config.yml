@@ -32,20 +32,6 @@ jobs:
           root: .
           paths:
             - build
-  tu:
-    <<: *defaults
-    steps:
-      - checkout
-      - attach_workspace:
-          at: .
-      - run: npm run test
-  e2e:
-    <<: *defaults
-    steps:
-      - checkout
-      - attach_workspace:
-          at: .
-      - run: npm run test
   lint:
     <<: *defaults
     steps:
@@ -110,18 +96,11 @@ workflows:
       - build:
           requires:
             - lint
-      - tu:
-          requires:
-            - build
-      - e2e:
-          requires:
-            - build
       - deploy-github:
+          type: approval
           requires:
-            - tu
-            - e2e
+            - build
       - deploy-prod:
           type: approval
           requires:
-            - tu
-            - e2e
+            - build
