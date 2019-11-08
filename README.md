@@ -1,4 +1,4 @@
-# [Ticketing - Lawencon Ticketing Support System Admin Template based on Ant Framework](https://www.lawencon.com/ "Lawencon")
+# [Ticketing - Ticketing Support System Admin Template based on Ant Framework](https://www.lawencon.com/ "Lawencon")
 Ticketing is a react redux based admin template for ticketing support system
 # Local Installation
 
